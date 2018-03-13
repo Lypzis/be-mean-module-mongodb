@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5aa7cd06e9b87216661b98a0"},"name":"Pikachu","description":"Cute eletric mouse","type":"eletric","attack":100.0,"height":0.4}
+{"_id":{"$oid":"5aa7cee6e9b87216661b98a4"},"name":"Bulbassauro","description":"Chicote de trapadeira","type":"grama","attack":49.0,"height":0.4}
+{"_id":{"$oid":"5aa7cee6e9b87216661b98a5"},"name":"Charmander","description":"Esse é o cão chupando manga de fofinho","type":"fogo","attack":52.0,"height":0.6}
+{"_id":{"$oid":"5aa7cee6e9b87216661b98a6"},"name":"Squirtle","description":"Ejeta água que passarinho não bebe","type":"água","attack":48.0,"height":0.5}
+{"_id":{"$oid":"5aa7d009e9b87216661b98a7"},"name":"Caterpie","description":"Larva lutadora","type":"inseto","attack":30.0,"height":0.3,"defense":35.0}
