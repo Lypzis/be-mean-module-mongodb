@@ -1,0 +1,8 @@
+{"_id":{"$oid":"5aa7cd06e9b87216661b98a0"},"name":"Pikachu","description":"There's nothing cute here","type":"eletric","attack":124.0,"height":0.4,"moves":["investida","choque do trovão","desvio"],"active":false}
+{"_id":{"$oid":"5aa7cee6e9b87216661b98a6"},"name":"Squirtle","description":"Ejeta água que passarinho não bebe","type":"água","attack":50.0,"height":0.5,"active":false,"moves":["investida","hidro bomba","desvio"]}
+{"_id":{"$oid":"5aa7d009e9b87216661b98a7"},"name":"Caterpie","description":"Larva lutadora","type":"inseto","attack":30.0,"height":0.3,"defense":35.0,"active":false,"moves":["investida","desvio"]}
+{"_id":{"$oid":"5aa7cee6e9b87216661b98a5"},"name":"Charmander","description":"Esse é o cão chupando manga de fofinho","type":"fogo","attack":54.0,"height":0.6,"active":false,"moves":["investida","lança-chamas","desvio"]}
+{"_id":{"$oid":"5aa7cee6e9b87216661b98a4"},"name":"Bulbassauro","description":"Chicote de trapadeira","type":"grama","attack":51.0,"height":0.4,"active":false,"moves":["investida","folha navalha","desvio"]}
+{"_id":{"$oid":"5aa80e9eb60c5c7bae27609d"},"description":"Pokemon de teste","attack":7001.0,"defense":8000.0,"name":"Testemon","active":false,"moves":["investida","desvio"]}
+{"_id":{"$oid":"5aa825b53f4fb2d9e06add84"},"active":false,"attack":null,"defense":null,"description":"Sem maiores informações","height":null,"name":"NaoExisteMon","moves":["investida","desvio"]}
+{"_id":{"$oid":"5aa83b613f4fb2d9e06adf7c"},"name":"AindaNaoExisteMon","active":null,"attack":null,"defense":null,"description":"Sem maiores informações","height":null}

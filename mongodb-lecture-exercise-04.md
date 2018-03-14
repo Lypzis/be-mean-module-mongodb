@@ -22,7 +22,36 @@
 	db.pokemons.update(query, mod, option)
 	```
 
-## 
+## Search all the pokemons who own the attack 'investida' and one more that you hava added, choose your favorite
+	```
+	var query = {moves: {$in: [ /inve.*/i, /nao.*/i] }
+	db.pokemons.find(query)
+	```
+
+## Search all the pokemons who own an attack added, choose your favorite
+	```
+	var query = {name: {$in:[/pikachu/i, /squirtle/i, /bulbassauro/i, /charmander/i]}}
+	var query = {name: /pikachu/i}
+	db.pokemons.find(query)
+	```	
+
+## Search for all pokemons without type eletric
+	```
+	var query = {type: {$nin: ['eletric']}}
+	db.pokemons.find(query)	
+	```
+
+## Search for all pokemons who own the attack 'investida' and own defense not less or equal to 49
+	```
+	var query = {$and: [{moves: {$in:['investida']}}, {defense: {$not: {$lte: 49}}}]}
+	db.pokemons.find(query)
+	```
+
+## Remove all pokemons with type water and attack less than 50
+	```
+	var query = {$and: [{type:'água'}, {attack : {$lt:50}}]}
+	db.pokemons.remove(query)
+ 
 
 
 
