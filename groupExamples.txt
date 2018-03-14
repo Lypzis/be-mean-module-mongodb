@@ -1,0 +1,39 @@
+Example about Group
+
+db.pokemons.group({
+    initial: { total: 0 },
+    cond: { defense: { $gt: 40 } },
+    reduce: function (curr, result) {
+        curr.types.forEach(function (type) {
+            if (result[type]) {
+                result[type]++;
+            } else { result[type] = 1; }
+            result.total++;
+        });
+    }
+});
+
+db.pokemons.group({
+    initial: {total:0,defense: 0, attack: 0},
+    reduce: function(curr, result){
+        result.total++;
+        result.defense += curr.defense;
+        result.attack += curr.attack;
+    },
+    finalize: function(result){
+        result.defense_avg = result.defense / result.total;
+        result.attack_avg = result.attack / result.total;
+    }
+});
+
+Aggregate:
+
+db.pokemons.aggregate({
+    $group: {
+        _id: {},
+        defense_avg: { $avg: 'defense'},
+        attack_avg: { $avg: 'attack'},
+        attack: {$sum: '$attack'},
+        total: {$sum:1}
+    }
+})
